@@ -14,7 +14,8 @@ function Navbar(){
            <li className="navbar-item"><a href="#">Kids</a></li>
         </div>
         <div className="user-info">
-            <p>hello</p>
+        {/* <a href="#"><button className="btn">Log in</button></a>
+        <a href="#"><button className="btn">Shop Now</button></a> */}
         </div>
         </div>
     )
