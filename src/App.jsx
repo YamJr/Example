@@ -6,12 +6,12 @@ import Accesories from './Component/Accesories/accesories'
 
 function App() {
   return (
-    <div div className='app'>
+    <>
       <Navbar />
       <Home />
       <Accesories />
       <Footer />
-    </div>
+    </>
   )
 }
 

@@ -1,7 +1,8 @@
 .footer{
     background-color:#F3F3F3;
     display: flex;
-    padding: 40px;
+    padding-left: 10%;
+    padding-top: 2rem;
 }
 .about{
     width: 50%;
@@ -15,4 +16,17 @@
 .useful-links{
     width: 50%;
     text-align: center;
+}
+.footer__bottom{
+    text-align: center;
+    background-color: #F3F3F3;
+    padding: 15px;
+}
+.icons{
+    margin-top: 9px;
+    color: #3D5A92;
+    margin-right: 15px;
+}
+.icons:hover{
+    color: rgb(0, 0, 0);
 }
