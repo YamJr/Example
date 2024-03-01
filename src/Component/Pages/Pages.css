@@ -1,0 +1,104 @@
+.card-container{
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    margin-top: 20px;
+    flex-wrap:wrap;
+}
+.card {
+    border: 1px solid #ddd;
+    margin: 10px;
+    width: 400px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition:box-shadow 0.6s ease;
+  }
+  .card:hover{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card img {
+    max-width: 100%;
+    height: auto;
+    object-fit:auto;
+  }
+  
+  .card h4 {
+    padding-left: 10px;
+    text-transform: capitalize;
+  }
+  
+  .card p {
+    padding-left: 10px;
+    color: rgb(138, 138, 138);
+  }
+  .card h5{
+        padding-left: 10px;
+        margin-bottom: 3px;
+  }
+  .see_more{
+    border: 1px solid;
+    background-color: white;
+    color:black;
+    padding: 10px;
+    margin-top: 30px;
+    width: 120px;
+    font-size: 16px;
+    text-transform: capitalize;
+  }
+  .see_more:hover{
+    background-color: black;
+    color: white;
+    transition: 0.6s;
+}
+.banner{
+  /* background: linear-gradient(90deg, rgba(186,0,12,0.7198529069831057) 0%, rgba(216,54,54,0.37531509185705536) 23%, rgba(255,0,0,0.3781162123052346) 95%); */
+  background: linear-gradient(90deg, rgba(186,0,12,0.7198529069831057) 0%, rgba(216,54,54,0.46495094619879207) 23%, rgba(255,0,0,0.5797968845741421) 95%);
+  display: flex;
+  width: 65%;
+  justify-content: center;
+  margin: auto;
+  padding: 0px 140px;
+  gap: 7rem;
+  height: 60vh;
+  margin-bottom: 3rem;
+}
+.banner__left{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .banner__left h1{
+      padding: 4px 0px;
+      text-transform: uppercase;
+      font-size: 35px;
+  }
+  .banner__left p{
+      padding-bottom: 5px;
+      text-transform: capitalize;
+  }
+.banner__img{
+  width: 340px;
+}
+.banner__right img{
+  justify-content: flex-end;
+  margin-top: 7rem;
+  width: 300px;
+  transform: rotate(25deg);
+    display: flex;
+}
+.check_btn{
+  border: 1px solid;
+    background-color: white;
+    color:black;
+    padding: 10px;
+    margin-bottom: 30px;
+    width: 120px;
+    font-size: 16px;
+}
+.check_btn:hover{
+  background-color: black;
+  color: white;
+  transition: 0.6s;
+}
