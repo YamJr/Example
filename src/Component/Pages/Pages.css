@@ -45,6 +45,7 @@
     width: 120px;
     font-size: 16px;
     text-transform: capitalize;
+    cursor: pointer;
   }
   .see_more:hover{
     background-color: black;
@@ -60,7 +61,7 @@
   margin: auto;
   padding: 0px 140px;
   gap: 7rem;
-  height: 60vh;
+  height: auto;
   margin-bottom: 3rem;
 }
 .banner__left{
@@ -96,9 +97,85 @@
     margin-bottom: 30px;
     width: 120px;
     font-size: 16px;
+    cursor: pointer;
 }
 .check_btn:hover{
   background-color: black;
   color: white;
   transition: 0.6s;
+}
+.form__container{
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  margin: 5rem auto;
+  height: auto;
+  padding: 3rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition:box-shadow 0.6s ease;
+  flex-direction: column;
+}
+.header{
+  display: flex;
+  justify-content: center;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+.label__style{
+  text-transform: capitalize;
+}
+.input__style{
+  width: 100%;
+  padding:8px;
+  margin-bottom:10px;
+  box-sizing: border-box;
+}
+.signup__btn{
+  border: 1px solid;
+    background-color: white;
+    color:black;
+    padding: 8px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-transform: capitalize;
+}
+.signup__btn:hover{
+  background-color: black;
+  color: white;
+  transition: 0.6s ease-out;
+}
+/* .lable__check{
+  display: flex;
+  align-items:center ;
+  margin-bottom: 10px;
+  gap: 5px;
+  font-size: 14px;
+} */
+.forget__style{
+  text-transform: capitalize;
+  display: flex;
+  align-items:center ;
+  margin-bottom: 10px;
+  font-size: 13px;
+  color:rgb(71, 71, 249);
+  cursor: pointer;
+}
+.mem__style{
+    display: flex;
+   justify-content: center;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+.signup__style{
+  color: blue;
+  cursor: pointer;
+}
+.error__style{
+  color: red;
+  font-size: 12px;
+  margin-bottom: 10px;
 }

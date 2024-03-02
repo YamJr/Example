@@ -57,7 +57,7 @@ function Accesories() {
   };
   return (
     <div className="section">
-      <h2 className="info">New Arrival</h2>
+      <h2 className="info">New Arrivals</h2>
       <div className="card-container">
         {displayedItems.map((card, index) => (
           <Card
