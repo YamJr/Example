@@ -1,8 +1,11 @@
 import React from "react";
 import "./Home.css";
 import shoes from "../../Images/shoes.png";
+import Accesories from "../Accesories/accesories";
+import Banner from "../Pages/Banner";
 function Home() {
   return (
+    <>
     <div className="wrapper">
       <div className="wrapper-left">
         <h1>
@@ -25,6 +28,9 @@ function Home() {
         <img src={shoes} alt="shoes" className="shoes" />
       </div>
     </div>
+    <Accesories/>
+    <Banner/>
+    </>
   );
 }
 export default Home;

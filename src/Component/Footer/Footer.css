@@ -3,10 +3,12 @@
     display: flex;
     padding-left: 10%;
     padding-top: 2rem;
+    margin: auto;
+    justify-content: space-around;
 }
-.about{
+/* .about{
     width: 50%;
-}
+} */
 .about p{
     max-width: 40%;
 }
@@ -29,4 +31,11 @@
 }
 .icons:hover{
     color: rgb(0, 0, 0);
+}
+
+.footer__bottom hr{
+    width: 82%;
+   margin:auto;
+    border:1px solid black;
+    margin-bottom: 5px
 }

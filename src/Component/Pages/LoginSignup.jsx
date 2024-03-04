@@ -4,7 +4,7 @@ import { useState } from "react";
 
 const LoginSignup = () => {
   const [formData, setFormData] = useState({
-    username:"",
+    username: "",
     email: "",
     password: "",
   });
@@ -32,49 +32,46 @@ const LoginSignup = () => {
     }
   };
 
-    const validateForm = ()=>{
-      let errors ={};
-      let isValid = true; 
+  const validateForm = () => {
+    let errors = {};
+    let isValid = true;
 
-      //username validation
-      if(!formData.username.trim()){
-        errors.username='Username is required';
-        isValid = false;
-      }
-
-      //email validation
-      if(!formData.email.trim()){
-        errors.email = 'Email is required';
-        isValid= false;
-      }
-      else if(!/\S+@\S+\.\S+/.test(formData.email)){
-        errors.email = 'Email is invalid';
-        isValid = false;
-      }
-
-      //password validation
-      if(!formData.password || !formData.password.trim()){
-        errors.password ='Password is required';
-        isValid= false;
-      }
-      else if(formData.password.length < 6){
-        errors.password = 'Password must be at least 6 characters';
-        isValid= false;
-      }
-
-      //for confirm password
-      if(!formData.confirmPassword ||!formData.confirmPassword.trim()){
-        errors.confirmPassword = 'Confirm Password is required';
-        isValid=false;
-      }
-      else if(formData.password !== formData.confirmPassword){
-          errors.confirmPassword= 'Password do not match';
-          isValid= false;
-      }
-      isValid=!formData.confirm;
-      setFormErrors(errors);
-      return isValid;
+    //username validation
+    if (!formData.username.trim()) {
+      errors.username = "Username is required";
+      isValid = false;
     }
+
+    //email validation
+    if (!formData.email.trim()) {
+      errors.email = "Email is required";
+      isValid = false;
+    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+      errors.email = "Email is invalid";
+      isValid = false;
+    }
+
+    //password validation
+    if (!formData.password || !formData.password.trim()) {
+      errors.password = "Password is required";
+      isValid = false;
+    } else if (formData.password.length < 6) {
+      errors.password = "Password must be at least 6 characters";
+      isValid = false;
+    }
+
+    //for confirm password
+    if (!formData.confirmPassword || !formData.confirmPassword.trim()) {
+      errors.confirmPassword = "Confirm Password is required";
+      isValid = false;
+    } else if (formData.password !== formData.confirmPassword) {
+      errors.confirmPassword = "Password do not match";
+      isValid = false;
+    }
+    isValid = !formData.confirm;
+    setFormErrors(errors);
+    return isValid;
+  };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -96,11 +93,11 @@ const LoginSignup = () => {
             placeholder="Enter Username"
             className="input__style"
           />
-           {formErrors.username && (
-          <span className="error__style">{formErrors.username}</span>
-        )}
+          {formErrors.username && (
+            <span className="error__style">{formErrors.username}</span>
+          )}
         </label>
-        <br/>
+        <br />
         <label className="label__style">
           email
           <input
@@ -111,7 +108,9 @@ const LoginSignup = () => {
             className="input__style"
             onChange={handleChange}
           />
-          {formErrors.email&& <span className="error__style">{formErrors.email}</span>}
+          {formErrors.email && (
+            <span className="error__style">{formErrors.email}</span>
+          )}
         </label>
         <br />
         <label className="label__style">
@@ -125,7 +124,9 @@ const LoginSignup = () => {
             className="input__style"
             onChange={handleChange}
           />
-          {formErrors.password&&<span className="error__style">{formErrors.password}</span>}
+          {formErrors.password && (
+            <span className="error__style">{formErrors.password}</span>
+          )}
         </label>
         <br />
         <label className="label__style">
@@ -139,7 +140,9 @@ const LoginSignup = () => {
             className="input__style"
             onChange={handleChange}
           />
-        {formErrors.confirmPassword &&<span className="error__style">{formErrors.confirmPassword}</span>}
+          {formErrors.confirmPassword && (
+            <span className="error__style">{formErrors.confirmPassword}</span>
+          )}
         </label>
         <br />
         {/* <p onClick={handleForgetPassword} className="forget__style">forget password?</p> */}

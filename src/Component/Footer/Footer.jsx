@@ -28,6 +28,7 @@ function Footer() {
         </div>
       </div>
       <div className="footer__bottom">
+        <hr/>
         <p>&copy; 2024 Your Company. All rights reserved.</p>
       </div>
     </>
