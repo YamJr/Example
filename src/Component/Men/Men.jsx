@@ -3,7 +3,9 @@ import './Men.css';
 
 function Men(){
   return (
-    <div>Men</div>
+    <div className='men__products'>
+        Men
+        </div>
   )
 }
 

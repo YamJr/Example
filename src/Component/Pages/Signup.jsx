@@ -2,22 +2,12 @@ import React from "react";
 import "./Pages.css";
 import { useState } from "react";
 
-const LoginSignup = () => {
+const Signup = () => {
   const [formData, setFormData] = useState({
     username: "",
     email: "",
     password: "",
   });
-
-  //for showPassword
-  //   const [showPassword, setShowPassword] = useState(false);
-  //   const handleShowPassword = () => {
-  //     setShowPassword(!showPassword);
-  //   };
-
-  // const handleForgetPassword=() =>{
-  //     console.log('forget Password');
-  // }
 
   const handleSignUp = () => {
     console.log("sign up");
@@ -91,6 +81,7 @@ const LoginSignup = () => {
             name="username"
             onChange={handleChange}
             placeholder="Enter Username"
+            required
             className="input__style"
           />
           {formErrors.username && (
@@ -105,6 +96,7 @@ const LoginSignup = () => {
             name="email"
             value={formData.email}
             placeholder="Enter Email"
+            required
             className="input__style"
             onChange={handleChange}
           />
@@ -116,11 +108,11 @@ const LoginSignup = () => {
         <label className="label__style">
           password
           <input
-            // type={showPassword ? "text" : "password"}
             type="password"
             name="password"
             value={formData.password}
             placeholder="Enter Password"
+            required
             className="input__style"
             onChange={handleChange}
           />
@@ -132,11 +124,11 @@ const LoginSignup = () => {
         <label className="label__style">
           confirm password
           <input
-            // type={showPassword ? "text" : "password"}
             type="password"
             name="confirmPassword"
             value={formData.confirmPassword}
             placeholder="Enter Confirm Password"
+            required
             className="input__style"
             onChange={handleChange}
           />
@@ -145,12 +137,6 @@ const LoginSignup = () => {
           )}
         </label>
         <br />
-        {/* <p onClick={handleForgetPassword} className="forget__style">forget password?</p> */}
-        {/*show password with check box */}
-        {/* <label className="label__check">
-        <input type="checkbox" onChange={handleShowPassword} />
-          show Password
-        </label> */}
         <button type="submit" className="signup__btn">
           sign up
         </button>
@@ -165,4 +151,4 @@ const LoginSignup = () => {
   );
 };
 
-export default LoginSignup;
+export default Signup;
